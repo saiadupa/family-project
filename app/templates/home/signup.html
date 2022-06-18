@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block links %}
+
+<a class="nav-item nav-link" id="home" href="/">Home</a>
+
+{% endblock links %}
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body,
+  html {
+			margin: 0;
+			padding: 0;
+			height: 100%;
+			background: #ffffff;
+		}
+  .container { 
+      position: relative;
+      right: 50;
+      margin: 20px;
+      max-width: 400px;
+      padding: 16px;
+      left: 50%;
+      margin-left: -200px; 
+      background-color: #f39c12;
+    }
+    .login_btn {
+      position: absolute;
+			width: 40%;
+			background: #c0392b;
+			color: white;
+      right: 30%;
+		}
+    .brand_logo_container {
+			position: absolute;
+			height: 170px;
+			width: 170px;
+      top: -20px;
+      right: 30%;
+      max-width: 500px;
+			border-radius: 50%;
+			background: #ffffff;
+			padding: 10px;
+			
+		}
+		.brand_logo {
+			height: 150px;
+			width: 150px;
+			border-radius: 60%;
+			border: 2px solid #ffffff;
+		}
+
+
+</style>
+</head>
+</html>
+
+
+
+<form method="post"><br><br><br><br><br><br>
+    
+    <div class="brand_logo_container">
+      <img src="https://wallpapercave.com/uwp/uwp2551748.png" class="brand_logo" alt="Logo">
+    </div>
+    <div class="form-group">
+        <label for="Sur name">Sur Name</label>
+        <input type="text" class="form-control" name="s_name" placeholder="Enter your sur name">
+    </div>
+    <div class="form-group">
+        <label for="First name">First Name</label>
+        <input type="text" class="form-control" name="f_name" placeholder="Enter your first name">
+    </div>
+    <div class="form-group">
+        <label for="Last name">Last Name</label>
+        <input type="text" class="form-control" name="l_name" placeholder="Enter your last name">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" name="pswd" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn login_btn">Signup</button>
+  </form>
+
+{% endblock content %}

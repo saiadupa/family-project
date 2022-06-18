@@ -1,0 +1,34 @@
+{% extends "user_base.html" %} 
+
+{% block title %}User{% endblock %} 
+
+{% block user_content %}
+
+<h1>User Content</h1>
+
+{% if user %}
+<nav class="navbar navbar-expand-lg navbar-Danger bg-warning">
+    <a class="navbar-brand">
+        <img src="https://wallpapercave.com/uwp/uwp2551748.png" width="30" height="30" alt="">
+    </a>
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          MENU
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="/DNA">DNA</a>
+          <a class="dropdown-item" href="/Biography">BIOGRAPHY</a>
+          <a class="dropdown-item" href="Profile">Profile</a>
+          <a class="dropdown-item" href="Dashboard">Dashboard</a>
+        </div>
+      </div>
+</nav>
+
+
+
+
+{% endif %}
+
+{% endblock user_content %}
+

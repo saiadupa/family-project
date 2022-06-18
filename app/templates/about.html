@@ -1,0 +1,23 @@
+{% if user %}
+
+{% extends 'user_base.html' %}
+
+{% block user_content %}
+
+<h1>I am user About</h1>
+
+{% endblock user_content %}
+
+
+
+{% else %}
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>I am everyone's About</h1>
+
+{% endblock content %}
+
+{% endif %}
