@@ -4,12 +4,8 @@ from ..models import *
 
 hom = Blueprint('hom', __name__ , static_folder="static", template_folder="templates")
 
-@hom.route('/')
+@hom.route('/', methods=['GET','POST'])
 def home():
-    return render_template('home/home.html')
-
-@hom.route('/login', methods=['GET','POST'])
-def login():
     if request.method == "POST":
         email = request.form.get('email')
         pswd = request.form.get('pswd')
@@ -20,7 +16,8 @@ def login():
             if sha256_crypt.verify(pswd, user.password):
                 session['email'] = user.email
                 return redirect(url_for('user.home'))
-    return render_template('home/login.html')
+    return render_template('home/home.html')
+
 
 @hom.route('/signup', methods=['GET','POST'])
 def signup():
