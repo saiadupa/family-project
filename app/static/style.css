@@ -7,6 +7,7 @@ html{
   background: #ffffff;
 }
 
+
 body {
   font: 20px Montserrat, sans-serif;
   line-height: 1.8;
@@ -55,16 +56,32 @@ p {font-size: 16px;}
   position: relative;
   right: 50;
   margin: 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 16px;
   left: 50%;
-  margin-left: -500px; 
+  margin-left: -600px; 
   background-color: #f39c12;
 }  
 .login_btn {
 	width: 100%;
 	background: #c0392b;
 	color: white;
+}
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+.left {
+  width: 68%;
+}
+.right {
+  width: 30%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .brand_logo_container {
