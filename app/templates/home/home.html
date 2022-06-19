@@ -14,83 +14,39 @@
 
 {% block content %}
 
-
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
-</style>
+
+<div class="row">
+  <div class="column left" style="background-color:#f39c12">
+    <h1>Family tree</h1>
+  <h5 class="w3-padding-32">Family tree content</h5>
+    <p class="w3-text-white">Every individual has a history which should be remembered and documented. We at KULVRIKSH understand the importance of family and helps you build your family tree and connect your past, present and future. Just like a tree, the roots help the trunk and the branches grow, similarly ancestors are our roots, the roots where we came from which makes us who we are. Knowing our roots help us understand our family better.
+Every family has a story, hence having a family tree encourages the newer generation to get acquantianted with their ancestors to know their stories and understand their origin.
+Families are the most important part of our lives and we at KULVRIKSH are dedicated towards connecting your families across generations.</p>
+  </div>
+  <div class="column right" style="background-color:white">
+    <form method="post">
+      <div class="form-group">
+        <p class="text-danger">Email address:</p>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <p class="text-danger">Password</p>
+        <input type="password" class="form-control" name="pswd" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <button type="submit" class="btn login_btn">Login</button>
+      <p class="message">Not registered? <a href="/signup">sign-up</a></p>
+  </form>
+  </div>
+</div>
 </head>
-<body>
-
-
-
-
-<!-- Header -->
-
-  
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
-
-
-<!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Family tree content</h5>
-
-      <p class="w3-text-grey">Every individual has a history which should be remembered and documented. We at KULVRIKSH understand the importance of family and helps you build your family tree and connect your past, present and future. Just like a tree, the roots help the trunk and the branches grow, similarly ancestors are our roots, the roots where we came from which makes us who we are. Knowing our roots help us understand our family better.
-Every family has a story, hence having a family tree encourages the newer generation to get acquantianted with their ancestors to know their stories and understand their origin.
-Families are the most important part of our lives and we at KULVRIKSH are dedicated towards connecting your families across generations.</p>
-    </div>
-
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Family tree content 1</h5>
-
-      <p class="w3-text-grey">Every individual has a history which should be remembered and documented. We at KULVRIKSH understand the importance of family and helps you build your family tree and connect your past, present and future. Just like a tree, the roots help the trunk and the branches grow, similarly ancestors are our roots, the roots where we came from which makes us who we are. Knowing our roots help us understand our family better.
-Every family has a story, hence having a family tree encourages the newer generation to get acquantianted with their ancestors to know their stories and understand their origin.
-Families are the most important part of our lives and we at KULVRIKSH are dedicated towards connecting your families across generations.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">live life</h1>
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <a href=" "><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="  "><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="  "><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-    <a href="  "><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-    <a href="  "><i class="fa fa-twitter w3-hover-opacity"></i></a>
-    <a href="  "><i class="fa fa-linkedin w3-hover-opacity"></i></a>
- </div>
- </footer>
-</body>
 </html>
+
+
+
+
+
 {% endblock content %}
